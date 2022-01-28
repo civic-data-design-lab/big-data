@@ -5,13 +5,9 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>11.154/11.454</title>
+  <title>Big Data, Visualization, and Society Class</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
-
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link rel="stylesheet" href="https://use.typekit.net/svv2lqc.css">
@@ -42,7 +38,9 @@
     <div class="container">
       <div class="hero-content">
         <h1><span class="typed" data-typed-items="Big Data, Visualization, and Society"></span></h1>
-        <h2>Fall 2021 - Central American Migration</h2>
+        <h2>Course 11.154/11.454 | Fall 2021</h2>
+        <h2>Sarah Williams</h2>
+        
       </div>
     </div>
   </div><!-- End Hero -->
@@ -51,18 +49,19 @@
   <header id="header" class="d-flex align-items-center">
     <div class="container d-flex align-items-center justify-content-between">
 
-      <div class="logo">
-        <!-- <h1><a href="index.html">Lonely</a></h1> -->
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-      </div>
+      <div></div>
 
       <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
+        <a id="modal-btn" class="nav-link" href="#about">About</a>
+        <!-- <i class="bi bi-list mobile-nav-toggle"></i> -->
       </nav><!-- .navbar -->
+
+      <div class="modal">
+      <!-- <div class="modal-content"> -->
+        <span class="close-btn">&times;</span>
+        <p>this is the text inside the modal</p>
+      <!-- </div> -->
+      </div>
 
     </div>
   </header><!-- End Header -->
@@ -77,17 +76,31 @@
           <div class="col-lg-12 d-flex justify-content-center">
             <ul id="portfolio-filters">
               <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-card">Card</li>
-              <li data-filter=".filter-web">Web</li>
+              <li data-filter=".filter-climate">Climate</li>
+              <li data-filter=".filter-demographics">Demographics</li>
+              <li data-filter=".filter-economics">Economics</li>
+              <li data-filter=".filter-food">Food Security</li>
+              <li data-filter=".filter-narratives">Narratives</li>
+              <li data-filter=".filter-policy">Policy</li>
             </ul>
           </div>
         </div>
 
         <div class="row portfolio-container">
 
+          <a href="https://garrimgyr.github.io/Money-Matters/" target="_blank">
+            <div class="col-lg-4 col-md-6 portfolio-item filter-economics">
+              <div class="portfolio-wrap">
+                <img src="img/thumbnails/money-matters.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Money Matters</h4>
+                  <p>McKenzie Humann, Daniel Pratama, John Devine</p>
+                </div>
+              </div>
+            </div></a>
+
           <a href="https://jprachasartta.github.io/11.154-fall-2021/" target="_blank">
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-economics">
             <div class="portfolio-wrap">
               <img src="img/thumbnails/northern-triangle-food.png" class="img-fluid" alt="">
               <div class="portfolio-info">
@@ -98,7 +111,7 @@
           </div></a>
 
           <a href="https://opheeelia.github.io/11.154-proj-pathways/" target="_blank">
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-policy">
             <div class="portfolio-wrap">
               <img src="img/thumbnails/policy-pathways.png" class="img-fluid" alt="">
               <div class="portfolio-info">
@@ -109,7 +122,7 @@
           </div></a>
 
           <a href="https://shakes-tzd.github.io/bigdata/" target="_blank">
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-economics">
             <div class="portfolio-wrap">
               <img src="img/thumbnails/dispelling-myths.png" class="img-fluid" alt="">
               <div class="portfolio-info">
@@ -120,7 +133,7 @@
           </div></a>
 
           <a href="https://kjj94.github.io/bigdata/index.html#" target="_blank">
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-demographics">
             <div class="portfolio-wrap">
               <img src="img/thumbnails/splitting-fragmenting.png" class="img-fluid" alt="">
               <div class="portfolio-info">
@@ -130,19 +143,8 @@
             </div>
           </div></a>
 
-          <a href="https://garrimgyr.github.io/Money-Matters/" target="_blank">
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="img/thumbnails/money-matters.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Money Matters</h4>
-                <p>McKenzie Humann, Daniel Pratama, John Devine</p>
-              </div>
-            </div>
-          </div></a>
-
           <a href="https://watkin-mit.github.io/11454-Ali-Atkinson/" target="_blank">
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-economics">
             <div class="portfolio-wrap">
               <img src="img/thumbnails/migration-mutual-benefits.png" class="img-fluid" alt="">
               <div class="portfolio-info">
@@ -153,7 +155,7 @@
           </div></a>
 
           <a href="https://gdege93.github.io/Climate-Change-in-Honduras/index.html" target="_blank">
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-climate">
             <div class="portfolio-wrap">
               <img src="img/thumbnails/cc-honduras.png" class="img-fluid" alt="">
               <div class="portfolio-info">
@@ -164,7 +166,7 @@
           </div></a>
 
           <a href="https://haileyshi617.github.io/bigdata-11.454-react/" target="_blank">
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-food">
             <div class="portfolio-wrap">
               <img src="img/thumbnails/food-insecurity.png" class="img-fluid" alt="">
               <div class="portfolio-info">
@@ -175,7 +177,7 @@
           </div></a>
 
           <a href="https://sophzheng.github.io/11.154-family-separations/" target="_blank">
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-policy">
             <div class="portfolio-wrap">
               <img src="img/thumbnails/family-separations.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
@@ -186,7 +188,7 @@
           </div></a>
 
           <a href="https://andreaariasaa.github.io/StoryViz/final_project/" target="_blank">
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-narratives">
             <div class="portfolio-wrap">
               <img src="img/thumbnails/migration-paths.png" class="img-fluid" alt="">
               <div class="portfolio-info">
@@ -197,7 +199,7 @@
           </div></a>
 
           <a href="https://splohms.github.io/bigdata2021/" target="_blank">
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-demographics">
             <div class="portfolio-wrap">
               <img src="img/thumbnails/gender-differences.png" class="img-fluid" alt="">
               <div class="portfolio-info">
@@ -208,7 +210,7 @@
           </div></a>
 
             <a href="https://luisgonzalex.github.io/finalproject/" target="_blank">
-            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="col-lg-4 col-md-6 portfolio-item filter-economics">
               <div class="portfolio-wrap">
                 <img src="img/thumbnails/healthcare.png" class="img-fluid" alt="">
                 <div class="portfolio-info">
@@ -219,7 +221,7 @@
             </div></a>
 
             <a href="https://mdcastilloc.github.io/bigdata_2021/#" target="_blank">
-            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="col-lg-4 col-md-6 portfolio-item filter-narratives">
               <div class="portfolio-wrap">
                 <img src="img/thumbnails/stories.png" class="img-fluid" alt="">
                 <div class="portfolio-info">
@@ -230,7 +232,7 @@
             </div></a>
 
             <a href="https://github.mit.edu/pages/lakshmig/bigdata_final/" target="_blank">
-            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="col-lg-4 col-md-6 portfolio-item filter-economics">
               <div class="portfolio-wrap">
                 <img src="img/thumbnails/employment.png" class="img-fluid" alt="">
                 <div class="portfolio-info">
@@ -241,7 +243,7 @@
             </div></a>
 
             <a href="https://github.mit.edu/pages/manolin/bigdataproject/" target="_blank">
-            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="col-lg-4 col-md-6 portfolio-item filter-food">
               <div class="portfolio-wrap">
                 <img src="img/thumbnails/guatemala-food.png" class="img-fluid" alt="">
                 <div class="portfolio-info">
@@ -259,6 +261,7 @@
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
+  <!-- leave in metadata -->
   <footer id="footer">
     <div class="container">
       <div class="copyright">

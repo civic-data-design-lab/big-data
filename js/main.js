@@ -43,25 +43,25 @@
   /**
    * Navbar links active state on scroll
    */
-  let navbarlinks = select("#navbar .scrollto", true);
-  const navbarlinksActive = () => {
-    let position = window.scrollY + 200;
-    navbarlinks.forEach((navbarlink) => {
-      if (!navbarlink.hash) return;
-      let section = select(navbarlink.hash);
-      if (!section) return;
-      if (
-        position >= section.offsetTop &&
-        position <= section.offsetTop + section.offsetHeight
-      ) {
-        navbarlink.classList.add("active");
-      } else {
-        navbarlink.classList.remove("active");
-      }
-    });
-  };
-  window.addEventListener("load", navbarlinksActive);
-  onscroll(document, navbarlinksActive);
+  // let navbarlinks = select("#navbar .scrollto", true);
+  // const navbarlinksActive = () => {
+  //   let position = window.scrollY + 200;
+  //   navbarlinks.forEach((navbarlink) => {
+  //     if (!navbarlink.hash) return;
+  //     let section = select(navbarlink.hash);
+  //     if (!section) return;
+  //     if (
+  //       position >= section.offsetTop &&
+  //       position <= section.offsetTop + section.offsetHeight
+  //     ) {
+  //       navbarlink.classList.add("active");
+  //     } else {
+  //       navbarlink.classList.remove("active");
+  //     }
+  //   });
+  // };
+  // window.addEventListener("load", navbarlinksActive);
+  // onscroll(document, navbarlinksActive);
 
   /**
    * Scrolls to an element with header offset
@@ -110,7 +110,7 @@
     typed_strings = typed_strings.split(";");
     new Typed(".typed", {
       strings: typed_strings,
-      loop: false,
+      loop: true,
       typeSpeed: 100,
       backSpeed: 50,
       backDelay: 2000,
@@ -136,11 +136,26 @@
   /**
    * Mobile nav toggle
    */
-  on("click", ".mobile-nav-toggle", function (e) {
-    select("#navbar").classList.toggle("navbar-mobile");
-    this.classList.toggle("bi-list");
-    this.classList.toggle("bi-x");
-  });
+  // on("click", ".nav-link", function (e) {
+  //   select("#modal").classList.toggle("open-modal");
+  //   // this.classList.toggle("bi-list");
+  //   // this.classList.toggle("bi-x");
+  // });
+
+  let modalBtn = document.getElementById("modal-btn");
+  let modal = document.querySelector(".modal");
+  let closeBtn = document.querySelector(".close-btn");
+  modalBtn.onclick = function () {
+    modal.style.display = "block";
+  };
+  closeBtn.onclick = function () {
+    modal.style.display = "none";
+  };
+  window.onclick = function (e) {
+    if (e.target == modal) {
+      modal.style.display = "none";
+    }
+  };
 
   /**
    * Mobile nav dropdowns activate
@@ -160,25 +175,25 @@
   /**
    * Scrool with ofset on links with a class name .scrollto
    */
-  on(
-    "click",
-    ".scrollto",
-    function (e) {
-      if (select(this.hash)) {
-        e.preventDefault();
+  // on(
+  //   "click",
+  //   ".scrollto",
+  //   function (e) {
+  //     if (select(this.hash)) {
+  //       e.preventDefault();
 
-        let navbar = select("#navbar");
-        if (navbar.classList.contains("navbar-mobile")) {
-          navbar.classList.remove("navbar-mobile");
-          let navbarToggle = select(".mobile-nav-toggle");
-          navbarToggle.classList.toggle("bi-list");
-          navbarToggle.classList.toggle("bi-x");
-        }
-        scrollto(this.hash);
-      }
-    },
-    true
-  );
+  //       let navbar = select("#navbar");
+  //       if (navbar.classList.contains("navbar-mobile")) {
+  //         navbar.classList.remove("navbar-mobile");
+  //         let navbarToggle = select(".mobile-nav-toggle");
+  //         navbarToggle.classList.toggle("bi-list");
+  //         navbarToggle.classList.toggle("bi-x");
+  //       }
+  //       scrollto(this.hash);
+  //     }
+  //   },
+  //   true
+  // );
 
   /**
    * Scroll with ofset on page load with hash links in the url
