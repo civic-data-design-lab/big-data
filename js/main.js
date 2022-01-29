@@ -134,12 +134,10 @@
   }
 
   /**
-   * Mobile nav toggle
+   * Nav about toggle
    */
   // on("click", ".nav-link", function (e) {
-  //   select("#modal").classList.toggle("open-modal");
-  //   // this.classList.toggle("bi-list");
-  //   // this.classList.toggle("bi-x");
+  //   select("body").classList.toggle("modal-open");
   // });
 
   let modalBtn = document.getElementById("modal-btn");
@@ -150,11 +148,6 @@
   };
   closeBtn.onclick = function () {
     modal.style.display = "none";
-  };
-  window.onclick = function (e) {
-    if (e.target == modal) {
-      modal.style.display = "none";
-    }
   };
 
   /**
