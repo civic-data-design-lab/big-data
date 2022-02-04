@@ -1,3 +1,6 @@
-# Big Data, Visualization, and Society 2021
+# Big Data, Visualization, and Society
 
-* example repository file structure
+* website for course 11.154 / 11.454
+* course led by Sarah Williams
+
+Website developed by Sophia Zheng.
